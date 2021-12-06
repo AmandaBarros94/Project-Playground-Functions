@@ -2,19 +2,22 @@
 function compareTrue(parametro1, parametro2) {
   let resultado = null;
   if (parametro1 === true && parametro2 === true) {
-    resultado = true
+    resultado = true;
   } else {
-    resultado = false
+    resultado = false;
   }
-  return resultado
+  return resultado;
 }
 
 compareTrue(true, true);
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  let formula = (base * height) / 2;
+  return formula 
 }
+console.log(calcArea(10, 50));
+
 
 // Desafio 3
 function splitSentence() {
