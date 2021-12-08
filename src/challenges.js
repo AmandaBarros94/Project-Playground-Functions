@@ -18,7 +18,6 @@ function calcArea(base, height) {
 }
 calcArea(10, 50);
 
-
 // Desafio 3
 function splitSentence(texto) {
   return texto.split(' ');
@@ -30,14 +29,17 @@ let arrayTeste = ['Lucas', 'Cassiano', 'Feraz', 'Paolillo'];
 function concatName(array) {
   let primeiroNome = array[0];
   let ultimoNome = array[array.length - 1];
-  return ultimoNome.concat(', ', primeiroNome)
+  return ultimoNome.concat(', ', primeiroNome);
 }
-concatName(arrayTeste); 
+concatName(arrayTeste);
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let pontos = wins * 3 + ties;
+  return pontos;
 }
+
+footballPoints(14, 8);
 
 // Desafio 6
 function highestCount() {
