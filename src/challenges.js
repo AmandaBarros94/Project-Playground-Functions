@@ -72,7 +72,7 @@ catAndMouse(0, 3, 2);
 // Desafio 8
 function fizzBuzz(array) {
   let resultado = [];
-  for (let index = 0; index < array.length; index++) {
+  for (let index = 0; index < array.length; index += 1) {
     if (array[index] % 3 === 0 && array[index] % 5 === 0) {
       resultado.push('fizzBuzz');
     } else if (array[index] % 3 !== 0 && array[index] % 5 !== 0) {
@@ -85,14 +85,28 @@ function fizzBuzz(array) {
   }
   return resultado;
 }
+
 fizzBuzz([2, 15, 7, 9, 45]);
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(text) {
+  let encodedText = text
+    .replace(/a/g, '1')
+    .replace(/e/g, '2')
+    .replace(/i/g, '3')
+    .replace(/o/g, '4')
+    .replace(/u/g, '5');
+  return encodedText;
 }
-function decode() {
-  // seu código aqui
+
+function decode(text) {
+  let decodedText = text
+    .replace(/1/g, 'a')
+    .replace(/2/g, 'e')
+    .replace(/3/g, 'i')
+    .replace(/4/g, 'o')
+    .replace(/5/g, 'u');
+  return decodedText;
 }
 
 module.exports = {
